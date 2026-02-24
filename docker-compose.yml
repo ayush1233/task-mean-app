@@ -3,8 +3,6 @@
 # ============================================
 # Services: MongoDB, Backend (Express), Frontend (Angular), Nginx (Reverse Proxy)
 
-version: '3.8'
-
 services:
   # -------------------------------------------
   # MongoDB Database
