@@ -266,13 +266,20 @@ The Nginx reverse proxy (`nginx/nginx.conf`) acts as the single entry point:
 
 | Screenshot | Description |
 |-----------|-------------|
-| ![Application Home]"C:\Users\91986\OneDrive\Pictures\Screenshots\Screenshot 2026-02-24 202117.png" | Application home page |
-| ![Docker Containers]"C:\Users\91986\OneDrive\Pictures\Screenshots\Screenshot 2026-02-24 202203.png" | Running Docker containers |
-| ![Docker Hub]"C:\Users\91986\OneDrive\Pictures\Screenshots\Screenshot 2026-02-24 201819.png" | Images on Docker Hub |
-| ![Docker Hub]"C:\Users\91986\OneDrive\Pictures\Screenshots\Screenshot 2026-02-24 201842.png" | Images on Docker Hub |
-| ![GitHub Actions]"C:\Users\91986\OneDrive\Pictures\Screenshots\Screenshot 2026-02-24 201636.png" | CI/CD pipeline run |
-| ![GitHub Actions]"C:\Users\91986\OneDrive\Pictures\Screenshots\Screenshot 2026-02-24 201551.png" | CI/CD pipeline run |
-| ![VM Deployment]"C:\Users\91986\OneDrive\Pictures\Screenshots\Screenshot 2026-02-24 201912.png" | Live deployment on Ubuntu VM |
+| ![Application Home]<img width="1920" height="1020" alt="Screenshot 2026-02-24 202117" src="https://github.com/user-attachments/assets/3a5269bf-6b5e-4dc5-bd67-446d142a4300" />
+ | Application home page |
+| ![Docker Containers]<img width="1920" height="1020" alt="Screenshot 2026-02-24 202203" src="https://github.com/user-attachments/assets/04f96f9e-0e45-4790-8320-cb208ab10c45" />
+ | Running Docker containers |
+| ![Docker Hub]<img width="1920" height="1020" alt="Screenshot 2026-02-24 201819" src="https://github.com/user-attachments/assets/de7a68a5-ed73-4da4-b5c2-78a33e0634e0" />
+ | Images on Docker Hub |
+| ![Docker Hub]<img width="1920" height="1020" alt="Screenshot 2026-02-24 201842" src="https://github.com/user-attachments/assets/41be7c9f-fb8b-4dae-944f-04245d5d7a9f" />
+ | Images on Docker Hub |
+| ![GitHub Actions]<img width="1825" height="1012" alt="Screenshot 2026-02-24 201551" src="https://github.com/user-attachments/assets/f0773947-3813-42f6-a0c5-334af2e97158" />
+ | CI/CD pipeline run |
+| ![GitHub Actions]<img width="1825" height="1012" alt="Screenshot 2026-02-24 201636" src="https://github.com/user-attachments/assets/271c95c7-ef70-4044-9d51-942ec8c77821" />
+ | CI/CD pipeline run |
+| ![VM Deployment]<img width="1825" height="1012" alt="Screenshot 2026-02-24 201912" src="https://github.com/user-attachments/assets/d6f41c03-74ec-4ff1-9334-5e7a56418904" />
+ | Live deployment on Ubuntu VM |
 
 ---
 
