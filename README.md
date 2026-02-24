@@ -266,11 +266,13 @@ The Nginx reverse proxy (`nginx/nginx.conf`) acts as the single entry point:
 
 | Screenshot | Description |
 |-----------|-------------|
-| ![Application Home](screenshots/home.png) | Application home page |
-| ![Docker Containers](screenshots/containers.png) | Running Docker containers |
-| ![Docker Hub](screenshots/dockerhub.png) | Images on Docker Hub |
-| ![GitHub Actions](screenshots/github-actions.png) | CI/CD pipeline run |
-| ![VM Deployment](screenshots/vm-deploy.png) | Live deployment on Ubuntu VM |
+| ![Application Home]("C:\Users\91986\OneDrive\Pictures\Screenshots\Screenshot 2026-02-24 202117.png") | Application home page |
+| ![Docker Containers]("C:\Users\91986\OneDrive\Pictures\Screenshots\Screenshot 2026-02-24 202203.png") | Running Docker containers |
+| ![Docker Hub]("C:\Users\91986\OneDrive\Pictures\Screenshots\Screenshot 2026-02-24 201819.png") | Images on Docker Hub |
+| ![Docker Hub]("C:\Users\91986\OneDrive\Pictures\Screenshots\Screenshot 2026-02-24 201842.png") | Images on Docker Hub |
+| ![GitHub Actions]("C:\Users\91986\OneDrive\Pictures\Screenshots\Screenshot 2026-02-24 201636.png") | CI/CD pipeline run |
+| ![GitHub Actions]("C:\Users\91986\OneDrive\Pictures\Screenshots\Screenshot 2026-02-24 201551.png") | CI/CD pipeline run |
+| ![VM Deployment]("C:\Users\91986\OneDrive\Pictures\Screenshots\Screenshot 2026-02-24 201912.png") | Live deployment on Ubuntu VM |
 
 ---
 
