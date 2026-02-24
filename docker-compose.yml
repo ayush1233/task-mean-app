@@ -1,0 +1,95 @@
+# ============================================
+# Docker Compose - MEAN Stack Application
+# ============================================
+# Services: MongoDB, Backend (Express), Frontend (Angular), Nginx (Reverse Proxy)
+
+version: '3.8'
+
+services:
+  # -------------------------------------------
+  # MongoDB Database
+  # -------------------------------------------
+  mongodb:
+    image: mongo:6
+    container_name: mean-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - mean-network
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh --quiet
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 10s
+
+  # -------------------------------------------
+  # Backend - Node.js + Express API
+  # -------------------------------------------
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: mean-backend
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/dd_db
+      - PORT=8080
+      - NODE_ENV=production
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - mean-network
+
+  # -------------------------------------------
+  # Frontend - Angular Application
+  # -------------------------------------------
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: mean-frontend
+    restart: unless-stopped
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
+    networks:
+      - mean-network
+
+  # -------------------------------------------
+  # Nginx - Reverse Proxy
+  # -------------------------------------------
+  nginx:
+    image: nginx:alpine
+    container_name: mean-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - mean-network
+
+# -------------------------------------------
+# Volumes
+# -------------------------------------------
+volumes:
+  mongo-data:
+    driver: local
+
+# -------------------------------------------
+# Networks
+# -------------------------------------------
+networks:
+  mean-network:
+    driver: bridge
