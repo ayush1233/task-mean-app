@@ -68,7 +68,7 @@ jobs:
           key: ${{ secrets.VM_SSH_KEY }}
           script: |
             # Navigate to project directory
-            cd ~/crud-dd-task-mean-app || exit 1
+            cd ~/task-mean-app || exit 1
 
             # Pull latest images from Docker Hub
             docker pull ${{ env.BACKEND_IMAGE }}:latest
